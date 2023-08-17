@@ -1,10 +1,20 @@
 // font families
-$big-font: "Space Grotesk", sans-serif;
-$small-font: "Noto Sans Georgian", sans-serif;
+$main-font: 'Inter', sans-serif;
+   
+$regular: 400;
+$semiBold: 600;
+$extraBold: 800;
+$black: 900;
 
 // font sizes
-$h1-size: 7rem;
-$h2-size: 6rem;
-$h4-size: 2.2rem;
-$text-normal: 2rem;
-$text-mini: 1.8rem;
+$h1-size: 4rem; //; 85px
+$h2-size: 3.125rem; //; 50px
+$h3-size: 2rem; //; 32px
+$h4-size: 1.25rem; // 20px 
+$text-big: 1rem; // 16px 
+$text-medium: 0.875rem; // 14px 
+$text-small: 0.75rem; // 12px 
+
+
+
+

@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
-import "../src/dist/styles.css";
 import Navbar from "./components/Navbar";
+// import "../src/dist/styles.css"
+import "../src/styles/styles.css"
 import { Route, Routes } from "react-router-dom";
 import Coin from "./pages/Coin";
 

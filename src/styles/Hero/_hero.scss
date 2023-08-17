@@ -3,18 +3,16 @@
 .hero-section {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(to top, $bg-black 30%, #130749 70%);
 }
 
 .hero-content {
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  height: 100vh;
+  top: 30%;
   width: 100%;
 
-  @media (max-width: 750px) {
-    top: 8.5%;
+  @media (max-width: 850px) {
+    top: 70%;
   }
 
   @media (max-width: 400px) {
@@ -23,11 +21,10 @@
 
   &__text {
     font-size: $h1-size;
-    color: $color-white;
+    color: $white-color;
     max-width: 104rem;
     height: fit-content;
     text-align: center;
-    text-transform: uppercase;
     line-height: 1.1;
     position: relative;
     margin: 0 auto;
@@ -47,13 +44,6 @@
     @media (max-width: 450px) {
       font-size: 3.5rem;
     }
-
-    span {
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      background-image: $color-blue-purp;
-    }
   }
 }
 
@@ -72,35 +62,6 @@
   }
   @media (max-width: 900px) {
     display: none;
-  }
-}
-
-.eth-float {
-  // width: 50rem;
-  // height: 50rem;
-  position: absolute;
-  top: -190px;
-  right: -277px;
-  animation: move 2s infinite;
-
-  @media (max-width: 1200px) {
-    right: -200px;
-  }
-  @media (max-width: 1000px) {
-    right: -160px;
-  }
-  @media (max-width: 900px) {
-    display: none;
-  }
-}
-
-@keyframes move {
-  0%,
-  100% {
-    transform: translateY(0) scale(0.14);
-  }
-  50% {
-    transform: translateY(-20px) scale(0.14);
   }
 }
 
@@ -128,8 +89,8 @@
 }
 
 .slider-coin {
-  font-size: $text-normal;
-  color: $color-white;
+  font-size: $text-medium;
+  color: $white-color;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,7 +112,7 @@
 
   &__name {
     font-weight: 600;
-    font-family: $big-font;
+    font-family: $main-font;
 
     span {
       color: $green;

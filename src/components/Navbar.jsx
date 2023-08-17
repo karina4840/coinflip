@@ -31,25 +31,30 @@ function Navbar() {
       <nav className={sticky ? "sticky-nav" : ""}>
         <div className="navbar">
           <Link to="/">
-            <p onClick={goTop}>COINFLIP</p>
+            <div onClick={goTop} className="navbar_logo"></div>
           </Link>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#buysell">Buy / Sell</a>
             </li>
             <li>
-              <a href="#market">Market</a>
+              <a href="#grow">Grow</a>
             </li>
             <li>
-              <a href="#choose-us">Choose Us</a>
+              <a href="#markets">Markets</a>
             </li>
             <li>
-              <a href="#join">Join</a>
+              <a href="#business">Business</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
             </li>
           </ul>
           <span>
-            <i className="fa-brands fa-twitter"></i>
-            <i className="fa-brands fa-discord"></i>
+            <button className="btn-secondary">
+              <p className="btn-secondary-text">Sign in</p>
+            </button>
+            <button className="btn-main">Sign up</button>
             {/* mobile */}
             <i
               onClick={openMobile}
@@ -64,16 +69,19 @@ function Navbar() {
         <i onClick={openMobile} className="fa-solid fa-xmark close-mobile"></i>
         <ul>
           <li onClick={openMobile}>
-            <a href="#home">Home</a>
+            <a href="#buysell">Buy / Sell</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#market">Market</a>
+            <a href="#grow">Grow</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#choose-us">Choose Us</a>
+            <a href="#markets">Markets</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#join">Join</a>
+            <a href="#business">Business</a>
+          </li>
+          <li onClick={openMobile}>
+            <a href="#support">Support</a>
           </li>
         </ul>
       </div>

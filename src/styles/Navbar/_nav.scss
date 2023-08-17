@@ -1,7 +1,8 @@
 @use "../global/" as *;
 
 nav {
-  font-family: $big-font;
+  font-family: $main-font;
+  font-weight: $semiBold;
   position: absolute;
   top: 0;
   right: 0;
@@ -9,7 +10,7 @@ nav {
   z-index: 200;
 
   a {
-    color: $color-white;
+    color: $white-color;
   }
 }
 
@@ -18,23 +19,96 @@ nav {
   justify-content: space-between;
   max-width: 120rem;
   margin: 0 auto;
-  font-size: $text-normal;
-  padding: 3rem 2rem;
+  font-size: $text-medium;
+  padding: 3rem 6rem;
   align-items: center;
-  color: $color-white;
+  color: $white-color;
 
-  p {
-    font-size: 3rem;
-    font-weight: 700;
+  .navbar_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    background-image: url(/public/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     cursor: pointer;
+  }
+
+  .btn-secondary {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 96px;
+    height: 40px;
+    border: none;
+    background-image: $white-color;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: -2px 2px 10px 0px $white-color;
+    }
+
+    &:active {
+      box-shadow: -2px 2px 10px 0px $purple-color;
+    }
+
+    @media (max-width: 850px) {
+      display: none;
+    }
+  }
+
+  .btn-secondary-text {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 94px;
+    height: 38px;
+    border: none;
+    border-radius: 10px;
+    background-color: $black-color;
+    color: $white-color;
+    font-size: $text-big;
+    font-weight: $semiBold;
+  }
+  .btn-main {
+    width: 96px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-image: $purple-blue-gradient;
+    color: $white-color;
+    font-size: $text-big;
+    font-weight: $semiBold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      box-shadow: -2px 2px 10px 0px $white-color;
+    }
+
+    &:active {
+      box-shadow: -2px 2px 10px 0px $purple-color;
+    }
+    @media (max-width: 850px) {
+      display: none;
+    }
   }
 
   ul {
     display: flex;
-    gap: 4rem;
+    gap: 1.5rem;
     list-style: none;
 
-    @media (max-width: 750px) {
+    @media (max-width: 850px) {
       display: none;
     }
 
@@ -45,21 +119,20 @@ nav {
       &:hover {
         transition: all 0.3s;
         background-clip: text;
-        -webkit-background-clip: text;
         color: transparent;
-        background-image: $color-blue-purp;
+        background-image: $purple-blue-gradient;
       }
     }
   }
 
   span {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
 
     i {
       cursor: pointer;
 
-      @media (max-width: 750px) {
+      @media (max-width: 850px) {
         display: none;
       }
 
@@ -68,7 +141,7 @@ nav {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        background-image: $color-blue-purp;
+        background-image: $purple-blue-gradient;
       }
     }
   }
@@ -76,16 +149,16 @@ nav {
 
 .hamburger-menu {
   display: none;
-  font-size: 2.7rem;
+  font-size: 2rem;
 
-  @media (max-width: 750px) {
+  @media (max-width: 850px) {
     display: flex !important;
   }
 }
 
 .sticky-nav {
-  background-color: $bg-black;
-  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.16);
+  background-color: #1a1823;
+  box-shadow: 0px 9px 20px 0px #1a1823;
   position: fixed;
 }
 
@@ -121,7 +194,7 @@ nav {
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        background-image: $color-blue-purp;
+        background-image: $purple-blue-gradient;
       }
     }
   }
@@ -142,6 +215,6 @@ nav {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    background-image: $color-blue-purp;
+    background-image: $purple-blue-gradient;
   }
 }

@@ -8,9 +8,9 @@ function Home() {
   return (
     <>
       <Hero />
-      <CoinUpdates />
-      <WhyUs />
-      <Join />
+      {/* <CoinUpdates /> */}
+      {/* <WhyUs /> */}
+      {/* <Join /> */}
       <Footer />
     </>
   );
