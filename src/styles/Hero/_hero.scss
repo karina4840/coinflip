@@ -8,18 +8,18 @@
 .hero-content {
   position: absolute;
   height: 100vh;
-  top: 30%;
+  top: 15%;
   width: 100%;
 
-  @media (max-width: 850px) {
-    top: 70%;
+  @media (max-width: 1000px) {
+    top: 15%;
   }
 
   @media (max-width: 400px) {
-    top: 7%;
+    top: 25%;
   }
 
-  &__text {
+  &__text h1{
     font-size: $h1-size;
     color: $white-color;
     max-width: 104rem;
@@ -38,32 +38,42 @@
     }
 
     @media (max-width: 750px) {
-      font-size: 4.5rem;
+      font-size: $h2-size;
     }
 
     @media (max-width: 450px) {
-      font-size: 3.5rem;
+      font-size: $h3-size;
     }
+  }
+
+  &__text_small h1 {
+    font-size: $text-big;
+    color: $grey-color;
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px auto;
+    font-weight: $regular;
+  }
+
+  @media (max-width: 1200px) {
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 750px) {
+    font-size: $text-big;
+  }
+
+  @media (max-width: 450px) {
+    font-size: $text-big;
   }
 }
 
-.btc-float {
-  // width: 50rem;
-  // height: 50rem;
-  position: absolute;
-  top: -190px;
-  left: -277px;
-  animation: move 2s infinite;
-  @media (max-width: 1200px) {
-    left: -200px;
-  }
-  @media (max-width: 1000px) {
-    left: -160px;
-  }
-  @media (max-width: 900px) {
-    display: none;
-  }
-}
 
 .coin-slider {
   max-width: 100rem;

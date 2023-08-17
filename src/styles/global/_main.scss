@@ -71,12 +71,12 @@ a {
 .loader {
   margin: 10rem auto;
   width: 64px;
-  height: 64px;
+  height: 64px; 
   position: relative;
-  background-image: linear-gradient(#fff 16px, transparent 0),
-    linear-gradient(#ff00ea 16px, transparent 0),
-    linear-gradient(#ff00ea 16px, transparent 0),
-    linear-gradient(#fff 16px, transparent 0);
+  background-image: linear-gradient($pink-color 16px, transparent 0),
+    linear-gradient($purple-color 16px, transparent 0),
+    linear-gradient($purple-color 16px, transparent 0),
+    linear-gradient($pink-color 16px, transparent 0);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;

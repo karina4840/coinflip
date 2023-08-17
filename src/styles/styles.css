@@ -67,7 +67,7 @@ a {
   width: 64px;
   height: 64px;
   position: relative;
-  background-image: linear-gradient(#fff 16px, transparent 0), linear-gradient(#ff00ea 16px, transparent 0), linear-gradient(#ff00ea 16px, transparent 0), linear-gradient(#fff 16px, transparent 0);
+  background-image: linear-gradient(#B982FF 16px, transparent 0), linear-gradient(#933FFE 16px, transparent 0), linear-gradient(#933FFE 16px, transparent 0), linear-gradient(#B982FF 16px, transparent 0);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;
@@ -160,7 +160,7 @@ a {
   width: 64px;
   height: 64px;
   position: relative;
-  background-image: linear-gradient(#fff 16px, transparent 0), linear-gradient(#ff00ea 16px, transparent 0), linear-gradient(#ff00ea 16px, transparent 0), linear-gradient(#fff 16px, transparent 0);
+  background-image: linear-gradient(#B982FF 16px, transparent 0), linear-gradient(#933FFE 16px, transparent 0), linear-gradient(#933FFE 16px, transparent 0), linear-gradient(#B982FF 16px, transparent 0);
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: left top, left bottom, right top, right bottom;
@@ -239,7 +239,7 @@ nav a {
 .navbar .btn-secondary:active {
   box-shadow: -2px 2px 10px 0px #933FFE;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .navbar .btn-secondary {
     display: none;
   }
@@ -277,7 +277,7 @@ nav a {
 .navbar .btn-main:active {
   box-shadow: -2px 2px 10px 0px #933FFE;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .navbar .btn-main {
     display: none;
   }
@@ -287,7 +287,7 @@ nav a {
   gap: 1.5rem;
   list-style: none;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .navbar ul {
     display: none;
   }
@@ -310,7 +310,7 @@ nav a {
 .navbar span i {
   cursor: pointer;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .navbar span i {
     display: none;
   }
@@ -327,7 +327,7 @@ nav a {
   display: none;
   font-size: 2rem;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .hamburger-menu {
     display: flex !important;
   }
@@ -400,21 +400,21 @@ nav a {
 .hero-content {
   position: absolute;
   height: 100vh;
-  top: 30%;
+  top: 15%;
   width: 100%;
 }
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
   .hero-content {
-    top: 70%;
+    top: 15%;
   }
 }
 @media (max-width: 400px) {
   .hero-content {
-    top: 7%;
+    top: 25%;
   }
 }
-.hero-content__text {
-  font-size: 4rem;
+.hero-content__text h1 {
+  font-size: 5.5rem;
   color: #fff;
   max-width: 104rem;
   height: -moz-fit-content;
@@ -425,45 +425,54 @@ nav a {
   margin: 0 auto;
 }
 @media (max-width: 1200px) {
-  .hero-content__text {
+  .hero-content__text h1 {
     font-size: 6rem;
   }
 }
 @media (max-width: 1000px) {
-  .hero-content__text {
+  .hero-content__text h1 {
     font-size: 5rem;
   }
 }
 @media (max-width: 750px) {
-  .hero-content__text {
-    font-size: 4.5rem;
+  .hero-content__text h1 {
+    font-size: 3.125rem;
   }
 }
 @media (max-width: 450px) {
-  .hero-content__text {
-    font-size: 3.5rem;
+  .hero-content__text h1 {
+    font-size: 2rem;
   }
 }
-
-.btc-float {
-  position: absolute;
-  top: -190px;
-  left: -277px;
-  animation: move 2s infinite;
+.hero-content__text_small h1 {
+  font-size: 1rem;
+  color: #898CA9;
+  width: 30%;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px auto;
+  font-weight: 400;
 }
 @media (max-width: 1200px) {
-  .btc-float {
-    left: -200px;
+  .hero-content {
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 1000px) {
-  .btc-float {
-    left: -160px;
+  .hero-content {
+    font-size: 1rem;
   }
 }
-@media (max-width: 900px) {
-  .btc-float {
-    display: none;
+@media (max-width: 750px) {
+  .hero-content {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 450px) {
+  .hero-content {
+    font-size: 1rem;
   }
 }
 
