@@ -1,0 +1,116 @@
+@use "../global/" as *;
+
+.start-section {
+  padding: 10rem;
+  height: fit-content;
+}
+
+.start-content {
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .start-content__info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10%;
+    margin-bottom: 10rem;
+  }
+  .start-content__info-text {
+    text-align: left;
+    line-height: 1.2;
+    width: 65%;
+
+    h2 {
+      font-size: $h2-size;
+      margin-bottom: 2rem;
+
+      @media (max-width: 550px) {
+        // font-size: 7rem;
+      }
+    }
+    p {
+      font-size: $text-big;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: $grey-color;
+    }
+  }
+
+  .start-content__info-img {
+    width: 25%;
+    height: auto;
+    background-image: url(/public/blue.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .start-content_subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    h2 {
+      font-size: $h2-size;
+      margin-bottom: 2rem;
+
+      @media (max-width: 550px) {
+        // font-size: 7rem;
+      }
+    }
+    p {
+      font-size: $text-big;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: $grey-color;
+
+      span {
+        color: $white-color;
+        margin-left: 5px;
+      }
+      i {
+        margin-left: 10px;
+        font-size: $text-small;
+      }
+    }
+
+    .email-wrap {
+      background: $purple-blue-gradient;
+      border-radius: 10px;
+      width: 304px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .email_input {
+        width: 302px;
+        height: 54px;
+        border: none;
+        border-radius: 10px;
+        background-color: $black-color;
+        padding: 0 20px;
+        color: $grey-color;
+
+        &:focus-visible {
+          border: none;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      i {
+        color: $grey-color;
+        position: absolute;
+        left: 540px;
+        cursor: pointer;
+      }
+    }
+  }
+}

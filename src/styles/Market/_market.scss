@@ -1,0 +1,139 @@
+@use "../global/" as *;
+
+.market-section {
+  padding: 5rem 0;
+}
+
+.market-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 60%;
+    margin: 0 auto 3rem;
+
+    h2 {
+      text-align: center;
+      color: $white-color;
+      font-size: $h2-size;
+      margin-bottom: 3rem;
+
+      @media (max-width: 430px) {
+        font-size: $h4-size;
+      }
+    }
+
+    p {
+      width: 70%;
+      text-align: center;
+      font-size: $text-big;
+      color: $grey-color;
+    }
+  }
+
+  &__coin-list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-x: auto;
+    background-color: $dark-grey-color;
+    border-radius: 20px;
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__pagination {
+      display: flex;
+      gap: 1.3rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5rem;
+
+      button {
+        font-size: $text-medium;
+        color: $grey-color;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid $grey-color;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .activePage {
+    background: $purple-color;
+    color: $white-color;
+  }
+
+  .coin-row {
+    display: grid;
+    grid-template-columns: 10fr 10fr 20fr 10fr 20fr;
+    color: $white-color;
+    font-size: $h4-size;
+    font-weight: $semiBold;
+    padding: 2rem;
+    text-align: right;
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid $white-trp-color;
+    align-items: center;
+    gap: 2rem;
+    user-select: none;
+    transition: all 0.3s;
+
+    &:hover {
+      transition: all 0.3s;
+      background-color: $black-trp-color;
+      cursor: pointer;
+    }
+
+    @media (max-width: 700px) {
+      width: fit-content;
+    }
+
+    p:last-child {
+      @media (max-width: 800px) {
+        width: 23rem;
+      }
+    }
+
+    p {
+      @media (max-width: 800px) {
+        width: 15rem;
+      }
+    }
+
+    span {
+      text-align: left;
+      align-items: center;
+      display: flex;
+      gap: 2rem;
+
+      @media (max-width: 800px) {
+        width: 19rem;
+      }
+
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+  }
+
+  .coin-symbol {
+    text-transform: uppercase;
+    color: $pink-color;
+  }
+}

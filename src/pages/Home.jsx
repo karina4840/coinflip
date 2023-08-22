@@ -1,16 +1,18 @@
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
-import Join from "../components/Join";
+import GetStarted from "../components/GetStarted";
 import CoinUpdates from "../components/CoinUpdates";
 import WhyUs from "../components/WhyUs";
+import Support from "../components/Support";
 
 function Home() {
   return (
     <>
       <Hero />
-      {/* <CoinUpdates /> */}
+      <CoinUpdates />
+      <Support />
       <WhyUs />
-      {/* <Join /> */}
+      <GetStarted />
       <Footer />
     </>
   );
