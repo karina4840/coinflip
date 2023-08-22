@@ -3,6 +3,7 @@
 .join-section {
   background-color: $bg-black;
   padding: 10rem;
+  height: 100vh;
 }
 
 .join-content {
@@ -78,7 +79,7 @@
   }
 
   a {
-    font-size: $text-normal;
+    font-size: $text-medium;
     font-weight: 600;
     padding: 2rem 4rem;
     background: $color-blue-purp;

@@ -6,46 +6,27 @@ function WhyUs() {
       <section id="choose-us" className="why-section">
         <div className="container">
           <div className="choose-container">
-            <h2>
-              why <span>choose us</span>
-            </h2>
-            <div className="choose-container__content">
-              <div className="choose-container__content__1">
+            {/* <h2>Why choose us</h2> */}
+            <div className="choose-container__content-box">
+              <div className="choose-container__content">
+                <Choose
+                  img="fa-solid fa-arrow-right-arrow-left"
+                  title="Trade Desk"
+                  text="Invest in crypto anytime, anywhere with our safe, secure, and easy to use online platform"
+                  link="Get Started"
+                />
                 <Choose
                   img="fa-solid fa-wallet"
-                  title="CONNECT YOUR WALLET"
-                  text="Use Trust Wallet, Metamask or to connect to the app."
+                  title="CoinFlip Wallet"
+                  text="Store your growing investments in our
+                  non-custodial wallet that gives you access to a full suite of DeFi services in one place"
+                  link="Download the App"
                 />
                 <Choose
-                  img="fa-solid fa-pen-ruler"
-                  title="SELECT YOUR QUANTITY"
-                  text="Upload your crypto and set a title, description and price."
-                />
-                <Choose
-                  img="fa-solid fa-bolt"
-                  title="CONFIRM TRANSACTION"
-                  text="Earn by selling your crypto on our marketplace."
-                />
-              </div>
-              <div className="choose-container__content__2">
-                {/* <img src={} alt="hand_img" /> */}
-              </div>
-              <div className="choose-container__content__3">
-                <Choose
-                  img="fa-solid fa-satellite-dish"
-                  title="RECEIVE YOUR OWN NFTS"
-                  text="Invest all your crypto at one place on one platform."
-                />
-                <Choose
-                  img="fa-solid fa-chess-knight"
-                  title="TAKE A MARKET
-                  TO SELL"
-                  text="Discover, collect the right crypto collections to buy or sell."
-                />
-                <Choose
-                  img="fa-solid fa-boxes-stacked"
-                  title="DRIVE YOUR COLLECTION"
-                  text="We make it easy to Discover, Invest and manage."
+                  img="fa-solid fa-money-bills"
+                  title="CoinFlip ATMs"
+                  text="We have thousands of ATMs located across the U.S. where you can easily convert cash to crypto"
+                  link="Find an ATM"
                 />
               </div>
             </div>

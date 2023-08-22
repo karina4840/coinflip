@@ -47,13 +47,15 @@ function Hero() {
               Buy, sell, and grow your crypto with CoinFlip, the platform dedicated to every trader at every level.
               </h1>
             </div>
+            <button className="btn-main-big">Get started</button>
+            {/* <button className="btn-secondary">Sign in</button> */}
 
             {/* mobile btn */}
             <a className="mobile-btn-hero" href="#market">
               See Prices <i className="fa-solid fa-angle-down"></i>
             </a>
 
-            {/* <div onLoad={() => setCoinsLoad(false)} className="coin-slider">
+            <div onLoad={() => setCoinsLoad(false)} className="coin-slider">
               {coinsLoad && <span className="loader"></span>}
               {data.map((item) => (
                 <Link
@@ -80,7 +82,7 @@ function Hero() {
                   </p>
                 </Link>
               ))}
-            </div> */}
+            </div>
           </div>
         </div>
       </section>

@@ -51,9 +51,7 @@ function Navbar() {
             </li>
           </ul>
           <span>
-            <button className="btn-secondary">
-              <p className="btn-secondary-text">Sign in</p>
-            </button>
+            <button className="btn-secondary">Sign in</button>
             <button className="btn-main">Sign up</button>
             {/* mobile */}
             <i

@@ -9,7 +9,7 @@ function Home() {
     <>
       <Hero />
       {/* <CoinUpdates /> */}
-      {/* <WhyUs /> */}
+      <WhyUs />
       {/* <Join /> */}
       <Footer />
     </>

@@ -1,63 +1,119 @@
 @use "../global/" as *;
 
 footer {
-  background-color: $bg-black;
   width: 100%;
-  height: 35rem;
-  background-image: url("/src/images/footer/footer-bg.png");
-  background-size: cover;
-  background-position: center center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 100px 0;
 }
 
 .footer-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: $white-trp-color;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  align-items: center;
+  align-items: start;
+  justify-content: space-between;
 
-  &__socials {
+  &__info {
     display: flex;
-    gap: 3rem;
-    color: $color-white;
-    font-size: 4rem;
-    // margin-top: 4rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    font-size: $text-medium;
+    color: $white-trp-color;
+    width: 30%;
 
-    i {
+    .footer_logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 120px;
+      height: 30px;
+      background-image: url(/public/logo-trp.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
       cursor: pointer;
+    }
 
-      &:hover {
-        transition: all 0.3s;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: $color-blue-purp;
+    p {
+      text-align: start;
+    }
+
+    .email-wrap {
+      background: $purple-blue-gradient;
+      border-radius: 10px;
+      width: 304px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .email_input {
+        width: 302px;
+        height: 54px;
+        border: none;
+        border-radius: 10px;
+        background-color: $black-color;
+        padding: 0 20px;
+        color: $grey-color;
+
+        &:focus-visible {
+          border: none;
+          box-shadow: none;
+          outline: none;
+        }
+      }
+      i {
+        position: absolute;
+        left: 330px;
+        cursor: pointer;
       }
     }
   }
 
-  &__text {
-    font-size: $text-mini;
-    color: $color-white;
+  &__links {
     display: flex;
-    gap: 3rem;
-    margin-top: 3rem;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    font-size: $text-medium;
+    color: $white-trp-color;
+    width: 20%;
 
     p {
       cursor: pointer;
+      text-align: start;
 
       &:hover {
         transition: all 0.3s;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        background-image: $color-blue-purp;
+        color: $grey-color;
+      }
+    }
+  }
+
+  &__policy {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+    font-size: $text-medium;
+    color: $white-trp-color;
+    width: 20%;
+
+    p {
+      cursor: pointer;
+      text-align: start;
+
+      &:hover {
+        transition: all 0.3s;
+        color: $grey-color;
       }
     }
   }
