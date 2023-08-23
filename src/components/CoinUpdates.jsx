@@ -41,7 +41,7 @@ function CoinUpdate() {
 
   return (
     <>
-      <section id="market" className="market-section">
+      <section id="buysell" className="market-section">
         <div className="container">
           <div className="market-content">
           <div className="market-content__text">

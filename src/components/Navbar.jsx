@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import NavElem from "./NavElem";
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -35,16 +37,13 @@ function Navbar() {
           </Link>
           <ul>
             <li>
-              <a href="#buysell">Buy / Sell</a>
+              <a href="/#buysell">Buy / Sell</a>
             </li>
             <li>
               <a href="#grow">Grow</a>
             </li>
             <li>
-              <a href="#markets">Markets</a>
-            </li>
-            <li>
-              <a href="#business">Business</a>
+              <a href="#why-us">Why Us</a>
             </li>
             <li>
               <a href="#support">Support</a>
@@ -67,16 +66,13 @@ function Navbar() {
         <i onClick={openMobile} className="fa-solid fa-xmark close-mobile"></i>
         <ul>
           <li onClick={openMobile}>
-            <a href="#buysell">Buy / Sell</a>
+            <a href="/#buysell">Buy / Sell</a>
           </li>
           <li onClick={openMobile}>
             <a href="#grow">Grow</a>
           </li>
           <li onClick={openMobile}>
-            <a href="#markets">Markets</a>
-          </li>
-          <li onClick={openMobile}>
-            <a href="#business">Business</a>
+            <a href="#why-us">Why Us</a>
           </li>
           <li onClick={openMobile}>
             <a href="#support">Support</a>

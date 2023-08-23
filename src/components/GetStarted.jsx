@@ -1,7 +1,7 @@
 function GetStarted() {
   return (
     <>
-      <section id="start" className="start-section">
+      <section id="grow" className="start-section">
         <div className="container">
           <div className="start-content">
             <div className="start-content__info">
@@ -25,16 +25,15 @@ function GetStarted() {
                   <i class="fa-solid fa-turn-up"></i>
                 </span>
               </p>
-              <div className="email-wrap">
+              <form autocomplete="off" method="post" action="" className="start__email-wrap">
                 <input
-                  className="email_input"
+                  className="start__email_input" 
                   type="email"
                   name="Email"
                   id=""
                   placeholder="Email Address"
                 />
-                <i class="fa-sharp fa-solid fa-arrow-right"></i>
-              </div>
+              </form>
             </div>
           </div>
         </div>

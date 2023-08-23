@@ -13,9 +13,9 @@ function Footer() {
       <footer>
         <div className="footer-content">
           <div className="footer-content__info">
-          <Link to="/">
-            <div onClick={goTop} className="footer_logo"></div>
-          </Link>
+            <Link to="/">
+              <div onClick={goTop} className="footer_logo"></div>
+            </Link>
             <p>
               CoinFlip, the world’s leading bitcoin ATM operator, makes it so
               flippin’ easy to buy and sell bitcoin via cash, card, or bank
@@ -24,7 +24,7 @@ function Footer() {
             <p>
               Sign up to get the latest in CoinFlip news, discounts, and more.
             </p>
-            <div className="email-wrap">
+            <form autocomplete="off" method="post" action="" className="email-wrap">
               <input
                 className="email_input"
                 type="email"
@@ -32,8 +32,7 @@ function Footer() {
                 id=""
                 placeholder="Email Address"
               />
-              <i class="fa-sharp fa-solid fa-arrow-right"></i>
-            </div>
+            </form>
             <p>© 2021 GPD Holdings, LLC FinCEN MSB</p>
           </div>
           <div className="footer-content__links">

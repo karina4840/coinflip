@@ -228,7 +228,7 @@ nav a {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: #000;
+  background-color: #1d1b22;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -278,7 +278,7 @@ nav a {
   }
 }
 .navbar ul a {
-  color: #f3f2f4;
+  color: #fff;
   font-weight: 700;
 }
 .navbar ul a:hover {
@@ -319,8 +319,8 @@ nav a {
 }
 
 .sticky-nav {
-  background-color: #1a1823;
-  box-shadow: 0px 9px 20px 0px #1a1823;
+  background-color: hwb(240 11% 85%/0.7);
+  box-shadow: 0px 9px 20px 0px hwb(240 11% 85%/0.7);
   position: fixed;
 }
 
@@ -332,9 +332,9 @@ nav a {
   left: -100%;
   width: 100%;
   height: 100vh;
-  background-color: #f3f2f4;
+  background-color: #fff;
   z-index: 9999999;
-  color: #0f051d;
+  color: #1d1b22;
   font-size: 3rem;
   text-align: center;
   align-items: center;
@@ -348,7 +348,7 @@ nav a {
   list-style: none;
 }
 .mobile-nav ul a {
-  color: #0f051d;
+  color: #1d1b22;
   font-weight: 600;
 }
 .mobile-nav ul a:hover {
@@ -504,7 +504,7 @@ nav a {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: #000;
+  background-color: #1d1b22;
   color: #fff;
   font-size: 1rem;
   font-weight: 600;
@@ -612,7 +612,10 @@ nav a {
 }
 
 .market-section {
-  padding: 5rem 0;
+  margin-top: -250px;
+  padding-top: 250px;
+  margin-bottom: 30rem;
+  height: 100vh;
 }
 
 .market-content {
@@ -683,7 +686,7 @@ nav a {
 }
 .market-content .coin-row {
   display: grid;
-  grid-template-columns: 10fr 10fr 20fr 10fr 20fr;
+  grid-template-columns: 10fr 0fr 20fr 10fr 20fr;
   color: #fff;
   font-size: 1.25rem;
   font-weight: 600;
@@ -741,7 +744,11 @@ nav a {
 }
 
 .why-section {
-  margin: 5rem 0;
+  margin-top: -250px;
+  padding-top: 250px;
+  margin-bottom: 13rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 @media (max-width: 700px) {
   .why-section {
@@ -837,13 +844,14 @@ nav a {
 }
 
 .start-section {
-  padding: 10rem;
-  height: -moz-fit-content;
-  height: fit-content;
+  margin-top: -250px;
+  padding-top: 250px;
+  margin-bottom: 10rem;
+  height: 100vh;
 }
 
 .start-content {
-  color: #f3f2f4;
+  color: #fff;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -855,13 +863,14 @@ nav a {
   display: flex;
   flex-direction: row;
   width: 100%;
-  gap: 10%;
   margin-bottom: 10rem;
+  gap: 10%;
+  justify-content: center;
 }
 .start-content .start-content__info-text {
   text-align: left;
   line-height: 1.2;
-  width: 65%;
+  width: 55%;
 }
 .start-content .start-content__info-text h2 {
   font-size: 3.125rem;
@@ -900,12 +909,13 @@ nav a {
 .start-content .start-content_subscribe p span {
   color: #fff;
   margin-left: 5px;
+  cursor: pointer;
 }
 .start-content .start-content_subscribe p i {
   margin-left: 10px;
   font-size: 0.75rem;
 }
-.start-content .start-content_subscribe .email-wrap {
+.start-content .start-content_subscribe .start__email-wrap {
   background: linear-gradient(to bottom left, #18C8FF 0%, #933FFE 100%);
   border-radius: 10px;
   width: 304px;
@@ -914,21 +924,116 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-.start-content .start-content_subscribe .email-wrap .email_input {
+.start-content .start-content_subscribe .start__email-wrap .start__email_input {
   width: 302px;
   height: 54px;
   border: none;
   border-radius: 10px;
-  background-color: #000;
+  background-color: #1d1b22;
   padding: 0 20px;
   color: #898CA9;
 }
-.start-content .start-content_subscribe .email-wrap .email_input:focus-visible {
+.start-content .start-content_subscribe .start__email-wrap .start__email_input:focus-visible {
   border: none;
   box-shadow: none;
   outline: none;
 }
-.start-content .start-content_subscribe .email-wrap i {
+
+.support-section {
+  margin-top: -250px;
+  padding-top: 250px;
+  margin-bottom: 10rem;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.support-content {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.support-content .support-content__info {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  gap: 10%;
+  margin-bottom: 10rem;
+}
+.support-content .support-content__info .support-content__info-text {
+  text-align: left;
+  line-height: 1.2;
+  width: 65%;
+}
+.support-content .support-content__info .support-content__info-text h2 {
+  font-size: 3.125rem;
+  margin-bottom: 2rem;
+}
+.support-content .support-content__info .support-content__info-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #898CA9;
+}
+.support-content .support-content__info-img {
+  width: 25%;
+  height: auto;
+  background-image: url(/public/orange.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.support-content .support-content_subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.support-content .support-content_subscribe h2 {
+  font-size: 3.125rem;
+  margin-bottom: 2rem;
+}
+.support-content .support-content_subscribe p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  color: #898CA9;
+}
+.support-content .support-content_subscribe p span {
+  color: #fff;
+  margin-left: 5px;
+}
+.support-content .support-content_subscribe p i {
+  margin-left: 10px;
+  font-size: 0.75rem;
+}
+.support-content .support-content_subscribe .email-wrap {
+  background: linear-gradient(to bottom left, #18C8FF 0%, #933FFE 100%);
+  border-radius: 10px;
+  width: 304px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.support-content .support-content_subscribe .email-wrap .email_input {
+  width: 302px;
+  height: 54px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1d1b22;
+  padding: 0 20px;
+  color: #898CA9;
+}
+.support-content .support-content_subscribe .email-wrap .email_input:focus-visible {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.support-content .support-content_subscribe .email-wrap i {
   color: #898CA9;
   position: absolute;
   left: 540px;
@@ -993,7 +1098,7 @@ footer {
   height: 54px;
   border: none;
   border-radius: 10px;
-  background-color: #000;
+  background-color: #1d1b22;
   padding: 0 20px;
   color: #898CA9;
 }
@@ -1001,11 +1106,6 @@ footer {
   border: none;
   box-shadow: none;
   outline: none;
-}
-.footer-content__info .email-wrap i {
-  position: absolute;
-  left: 330px;
-  cursor: pointer;
 }
 .footer-content__links {
   display: flex;

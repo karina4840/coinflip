@@ -3,7 +3,7 @@ import Choose from "./Choose";
 function WhyUs() {
   return (
     <>
-      <section id="choose-us" className="why-section">
+      <section id="why-us" className="why-section">
         <div className="container">
           <div className="choose-container">
             {/* <h2>Why choose us</h2> */}

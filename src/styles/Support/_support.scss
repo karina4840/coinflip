@@ -1,8 +1,10 @@
 @use "../global/" as *;
 
 .support-section {
-  padding: 10rem;
-  height: 100vh;
+  margin-top: -250px;
+  padding-top: 250px;
+  margin-bottom: 10rem;
+  height: fit-content;
 }
 
 .support-content {
@@ -11,7 +13,7 @@
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   position: relative;
 
   .support-content__info {
@@ -20,7 +22,7 @@
     width: 100%;
     gap: 10%;
     margin-bottom: 10rem;
- 
+
     .support-content__info-text {
       text-align: left;
       line-height: 1.2;
