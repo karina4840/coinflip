@@ -10,7 +10,7 @@ function Support() {
                   <p>
                   We invest more resources than any other platform in making sure great support from real people is a click away, whenever you need it.
                   </p>
-                  <button className="btn-secondary-big">Get started</button>
+                  <a href="#buysell" className="btn-secondary-big">Get started</a>
                 </div>
                 <div className="support-content__info-img"></div>
               </div>

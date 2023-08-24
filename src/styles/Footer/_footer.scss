@@ -8,6 +8,10 @@ footer {
   align-items: center;
   text-align: center;
   margin: 100px 0;
+
+  @media (max-width: 550px) {
+    margin: 50px 0;
+  }
 }
 
 .footer-content {
@@ -20,6 +24,11 @@ footer {
   align-items: flex-start;
   justify-content: space-between;
 
+  @media (max-width: 550px) {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
   &__info {
     display: flex;
     flex-direction: column;
@@ -28,6 +37,14 @@ footer {
     font-size: $text-medium;
     color: $white-trp-color;
     width: 30%;
+
+    @media (max-width: 800px) {
+      font-size: $text-small;
+    }
+
+    @media (max-width: 550px) {
+      width: 100%;
+    }
 
     .footer_logo {
       display: flex;
@@ -49,20 +66,31 @@ footer {
     .email-wrap {
       background: $purple-blue-gradient;
       border-radius: 10px;
-      width: 304px;
-      height: 56px;
+      width: 200px;
+      height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
 
+      @media (max-width: 800px) {
+        font-size: $text-small;
+        width: 200px;
+        height: 40px;
+      }
+
       .email_input {
-        width: 302px;
-        height: 54px;
+        width: 198px;
+        height: 38px;
         border: none;
         border-radius: 10px;
         background-color: $black-color;
         padding: 0 20px;
         color: $grey-color;
+
+        @media (max-width: 800px) {
+          width: 198px;
+          height: 38px;
+        }
 
         &:focus-visible {
           border: none;
@@ -81,6 +109,14 @@ footer {
     font-size: $text-medium;
     color: $white-trp-color;
     width: 20%;
+
+    @media (max-width: 800px) {
+      font-size: $text-small;
+    }
+
+    @media (max-width: 550px) {
+      width: 20%;
+    }
 
     p {
       cursor: pointer;
@@ -101,6 +137,14 @@ footer {
     font-size: $text-medium;
     color: $white-trp-color;
     width: 20%;
+
+    @media (max-width: 800px) {
+      font-size: $text-small;
+    }
+
+    @media (max-width: 550px) {
+      width: 60%;
+    }
 
     p {
       cursor: pointer;

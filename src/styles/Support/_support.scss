@@ -5,6 +5,14 @@
   padding-top: 250px;
   margin-bottom: 10rem;
   height: fit-content;
+
+  @media (max-width: 800px) {
+    margin-bottom: 300px;
+  }
+
+  @media (max-width: 550px) {
+    margin-bottom: 400px;
+  }
 }
 
 .support-content {
@@ -21,7 +29,7 @@
     flex-direction: row-reverse;
     width: 100%;
     gap: 10%;
-    margin-bottom: 10rem;
+    margin-bottom: 4rem;
 
     .support-content__info-text {
       text-align: left;
@@ -32,8 +40,11 @@
         font-size: $h2-size;
         margin-bottom: 2rem;
 
+        @media (max-width: 800px) {
+          font-size: $h3-size;
+        }
         @media (max-width: 550px) {
-          // font-size: 7rem;
+          font-size: $h4-size;
         }
       }
       p {
@@ -41,6 +52,9 @@
         line-height: 1.5;
         margin-bottom: 1rem;
         color: $grey-color;
+        @media (max-width: 550px) {
+          font-size: $text-medium;
+        }
       }
     }
   }
@@ -63,10 +77,6 @@
     h2 {
       font-size: $h2-size;
       margin-bottom: 2rem;
-
-      @media (max-width: 550px) {
-        // font-size: 7rem;
-      }
     }
     p {
       font-size: $text-big;

@@ -3,22 +3,27 @@
 .hero-section {
   width: 100%;
   height: 100vh;
+  padding-top: 5rem;
+
+  @media (max-width: 550px) {
+    padding-top: 10rem;
+    margin-bottom: 10rem;
+    height: 100vh;
+  }
 }
 
 .hero-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100%;
-  // margin-top: %;
 
-  @media (max-width: 1000px) {
-    padding-bottom: 20%;
-  }
-
-  @media (max-width: 400px) {
-    padding-bottom: 65%;
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 20rem;
   }
 
   &__text h1 {
@@ -31,58 +36,34 @@
     position: relative;
     margin: 0 auto;
 
-    @media (max-width: 1200px) {
-      font-size: 6rem;
-    }
-
-    @media (max-width: 1000px) {
-      font-size: 5rem;
-    }
-
-    @media (max-width: 750px) {
+    @media (max-width: 800px) {
       font-size: $h2-size;
-    }
-
-    @media (max-width: 450px) {
-      font-size: $h3-size;
     }
   }
 
   &__text_small h1 {
     font-size: $text-big;
     color: $grey-color;
-    width: 30%;
+    width: 60%;
     height: fit-content;
     text-align: center;
     line-height: 1.5;
     margin: 20px auto;
     font-weight: $regular;
 
-    @media (max-width: 1200px) {
-      font-size: 1.3rem;
-      width: 60%;
-    }
-
-    @media (max-width: 1000px) {
-      font-size: 1rem;
-      width: 60%;
-    }
-
-    @media (max-width: 750px) {
+    @media (max-width: 800px) {
       font-size: $text-big;
       width: 60%;
-    }
-
-    @media (max-width: 450px) {
-      font-size: $text-big;
-      width: 70%;
     }
   }
 }
 .btn-main-big {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 156px;
   height: 56px;
-  margin: 20px auto;
+  margin: 20px 0;
   border: none;
   border-radius: 10px;
   background-image: $purple-blue-gradient;
@@ -98,9 +79,6 @@
 
   &:active {
     box-shadow: -2px 2px 10px 0px $purple-color;
-  }
-  @media (max-width: 1000px) {
-    display: none;
   }
 }
 
@@ -129,69 +107,6 @@
   &:active {
     box-shadow: -2px 2px 10px 0px $purple-color;
   }
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
-}
-
-.coin-slider {
-  width: 100%;
-  height: 20rem;
-  align-items: center;
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-  flex-direction: row;
-  justify-content: space-between;
-
-  @media (max-width: 750px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-  }
-
-  @media (max-width: 600px) {
-    display: none;
-  }
-}
-
-.slider-coin {
-  font-size: $text-medium;
-  color: $white-color;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  // border: 1px solid gold;
-  width: 20rem;
-  height: auto;
-  user-select: none;
-
-  @media (max-width: 750px) {
-    margin: 0 auto;
-  }
-
-  img {
-    width: 9rem;
-    height: 9rem;
-    margin-bottom: 1rem;
-  }
-
-  &__name {
-    font-weight: 600;
-    font-family: $main-font;
-
-    span {
-      color: $green;
-    }
-  }
-
-  &__price {
-    font-weight: 600;
-    margin-top: 0.5rem;
-    font-size: $h4-size;
-  }
 }
 
 .red-text {
@@ -200,26 +115,4 @@
 
 .green-text {
   color: $green !important;
-}
-
-.mobile-btn-hero {
-  display: none;
-  font-size: 2rem;
-  font-weight: 600;
-  width: 25rem;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  padding: 2rem 4rem;
-  background: linear-gradient(25deg, #2600fc, #ff00ea);
-  color: #f3f2f4;
-  border-radius: 10rem;
-  transition: all 0.2s;
-  margin: 0 auto;
-  margin-top: 3rem;
-
-  @media (max-width: 600px) {
-    display: flex;
-  }
 }

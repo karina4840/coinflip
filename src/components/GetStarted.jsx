@@ -12,7 +12,7 @@ function GetStarted() {
                   famous Semantics, large language ocean Separated they live in
                   Bookmarks right at the coast.
                 </p>
-                <button className="btn-main-big">Get started</button>
+                <a href="#buysell" className="btn-main-big">Get started</a>
               </div>
               <div className="start-content__info-img"></div>
             </div>

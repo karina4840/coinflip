@@ -146,8 +146,9 @@ nav {
 }
 
 .sticky-nav {
-  background-color: hwb(240 11% 85% / 0.7);
-  box-shadow: 0px 9px 20px 0px hwb(240 11% 85% / 0.7);
+  background-color: $dark-grey-trp-color;
+
+  box-shadow: 0px 9px 20px 0px $dark-grey-trp-color;
   position: fixed;
 }
 
@@ -159,7 +160,7 @@ nav {
   left: -100%;
   width: 100%;
   height: 100vh;
-  background-color: $white-color;
+  background-color: $dark-grey-color;
   z-index: 9999999;
   color: $black-color;
   font-size: 3rem;
@@ -175,11 +176,11 @@ nav {
     list-style: none;
 
     a {
-      color: $black-color;
+      color: $grey-color;
       font-weight: 600;
 
       &:hover {
-        transition: all 0.3s;
+        transition: all 0.4s;
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -198,6 +199,7 @@ nav {
   top: 3rem;
   right: 3rem;
   cursor: pointer;
+  color: $grey-color;
 
   &:hover {
     transition: all 0.3s;

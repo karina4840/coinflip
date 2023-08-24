@@ -6,7 +6,6 @@ function WhyUs() {
       <section id="why-us" className="why-section">
         <div className="container">
           <div className="choose-container">
-            {/* <h2>Why choose us</h2> */}
             <div className="choose-container__content-box">
               <div className="choose-container__content">
                 <Choose

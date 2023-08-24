@@ -3,7 +3,7 @@ function NavElem() {
     <>
       <ul>
         <li>
-          <a href="/#buysell">Buy / Sell</a>
+          <a href="#buysell">Buy / Sell</a>
         </li>
         <li>
           <a href="#grow">Grow</a>

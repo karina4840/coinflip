@@ -35,7 +35,12 @@ function Navbar() {
           <Link to="/">
             <div onClick={goTop} className="navbar_logo"></div>
           </Link>
-          <ul>
+
+          <Routes>
+            <Route path="/" element={<NavElem />} />
+          </Routes>
+
+          {/* <ul>
             <li>
               <a href="/#buysell">Buy / Sell</a>
             </li>
@@ -48,7 +53,7 @@ function Navbar() {
             <li>
               <a href="#support">Support</a>
             </li>
-          </ul>
+          </ul> */}
           <span>
             <button className="btn-secondary">Sign in</button>
             <button className="btn-main">Sign up</button>
