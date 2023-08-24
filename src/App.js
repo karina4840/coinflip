@@ -1,8 +1,6 @@
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
-import NavElem from "./components/NavElem";
-// import "../src/dist/styles.css"
-import "../src/styles/styles.css";
+import "../src/dist/styles.css"
 import { Route, Routes } from "react-router-dom";
 import Coin from "./pages/Coin";
 
