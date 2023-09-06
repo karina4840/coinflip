@@ -39,24 +39,9 @@ function Navbar() {
           <Routes>
             <Route path="/" element={<NavElem />} />
           </Routes>
-
-          {/* <ul>
-            <li>
-              <a href="/#buysell">Buy / Sell</a>
-            </li>
-            <li>
-              <a href="#grow">Grow</a>
-            </li>
-            <li>
-              <a href="#why-us">Why Us</a>
-            </li>
-            <li>
-              <a href="#support">Support</a>
-            </li>
-          </ul> */}
           <span>
-            <button className="btn-secondary">Sign in</button>
-            <button className="btn-main">Sign up</button>
+            <button className="btn-secondary">User</button>
+            <button className="btn-main">Admin</button>
             {/* mobile */}
             <i
               onClick={openMobile}
