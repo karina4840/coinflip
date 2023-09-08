@@ -10,6 +10,7 @@ Integrated with the Coingecko API, a widely used cryptocurrency data source, the
 - React JS <br>
 - SCSS  <br>
 - Coingecko API <br>
+- Auth0 <br>
 
 <br>
 
