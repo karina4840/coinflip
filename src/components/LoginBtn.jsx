@@ -1,18 +1,13 @@
 import React, {useState} from "react";
-import { NavLink as RouterNavLink } from "react-router-dom";
-
 import {
   Nav,
   NavItem,
   Button
 } from "reactstrap";
-
 import { useAuth0 } from "@auth0/auth0-react";
 
 const LoginBtn = () => {
   const { user, isAuthenticated, loginWithRedirect, logout } = useAuth0();
-
-  const [mobile, setMobile] = useState(false);
 
   const logoutWithRedirect = () =>
     logout({
@@ -28,8 +23,7 @@ const LoginBtn = () => {
           <NavItem>
             <Button
               id="qsLoginBtn"
-              className={`btn-main ${mobile ? "btn-main" : "btn-main"}`}
-              // className="btn-main"
+              className="btn-main"
               onClick={() => loginWithRedirect()}
             >
               Log in
@@ -45,8 +39,7 @@ const LoginBtn = () => {
               to="#"
               id="qsLogoutBtn"
               onClick={() => logoutWithRedirect()}
-              // className="btn-secondary"
-              className={`btn-secondary ${mobile ? "btn-secondary" : "btn-secondary"}`}
+              className="btn-secondary"
             >
               Log out
             </Button>

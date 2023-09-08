@@ -41,7 +41,7 @@ function Navbar() {
 
           <Routes history={history}>
             <Route path="/" element={<NavElem />} />
-          </Routes>
+          </Routes> 
           <LoginBtn />
           <span className="hamburger-menu"> 
             <i

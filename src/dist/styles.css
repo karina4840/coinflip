@@ -356,6 +356,50 @@ nav a {
   justify-content: center;
   transition: all 0.4s ease-in-out;
 }
+.mobile-nav .btn-secondary {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  border: 1px solid #fff;
+  background-image: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: #1d1b22;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: auto;
+}
+.mobile-nav .btn-secondary:hover {
+  box-shadow: -2px 2px 10px 0px #fff;
+}
+.mobile-nav .btn-secondary:active {
+  box-shadow: -2px 2px 10px 0px #933FFE;
+}
+.mobile-nav .btn-main {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom left, #18C8FF 0%, #933FFE 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: auto;
+}
+.mobile-nav .btn-main:hover {
+  box-shadow: -2px 2px 10px 0px #fff;
+}
+.mobile-nav .btn-main:active {
+  box-shadow: -2px 2px 10px 0px #933FFE;
+}
 .mobile-nav ul {
   display: flex;
   flex-direction: column;
