@@ -305,11 +305,9 @@ nav a {
   background-image: linear-gradient(to bottom left, #18C8FF 0%, #933FFE 100%);
 }
 .navbar span {
-  /* display: none; */
   gap: 1.5rem;
 }
 .navbar span i {
-  display: none;
   gap: 1.5rem;
   cursor: pointer;
 }
