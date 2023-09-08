@@ -22,10 +22,10 @@ function GetStarted() {
                 Unsubscribe at any time.
                 <span>
                    Privacy policy
-                  <i class="fa-solid fa-turn-up"></i>
+                  <i className="fa-solid fa-turn-up"></i>
                 </span>
               </p>
-              <form autocomplete="off" method="post" action="" className="start__email-wrap">
+              <form autoComplete="off" method="post" action="" className="start__email-wrap">
                 <input
                   className="start__email_input" 
                   type="email"

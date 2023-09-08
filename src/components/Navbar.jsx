@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
 import NavElem from "./NavElem";
+import history from "../utils/history";
+import LoginBtn from "./LoginBtn";
+
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -36,16 +39,14 @@ function Navbar() {
             <div onClick={goTop} className="navbar_logo"></div>
           </Link>
 
-          <Routes>
+          <Routes history={history}>
             <Route path="/" element={<NavElem />} />
           </Routes>
-          <span>
-            <button className="btn-secondary">User</button>
-            <button className="btn-main">Admin</button>
-            {/* mobile */}
+          <LoginBtn />
+          <span className="hamburger-menu"> 
             <i
               onClick={openMobile}
-              className="fa-solid fa-bars-staggered hamburger-menu"
+              className={"fa-solid fa-bars-staggered hamburger-menu"}
             ></i>
           </span>
         </div>
@@ -66,6 +67,9 @@ function Navbar() {
           </li>
           <li onClick={openMobile}>
             <a href="#support">Support</a>
+          </li>
+          <li onClick={openMobile}>
+            <LoginBtn />
           </li>
         </ul>
       </div>

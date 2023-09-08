@@ -115,14 +115,16 @@ nav {
   }
 
   span {
-    display: flex;
+    display: none;
     gap: 1.5rem;
 
     i {
+      display: none;
+    gap: 1.5rem;
       cursor: pointer;
 
       @media (max-width: 1000px) {
-        display: none;
+        display: flex !important;
       }
 
       &:hover {

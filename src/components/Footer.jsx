@@ -24,7 +24,7 @@ function Footer() {
             <p>
               Sign up to get the latest in CoinFlip news, discounts, and more.
             </p>
-            <form autocomplete="off" method="post" action="" className="email-wrap">
+            <form autoComplete="off" method="post" action="" className="email-wrap">
               <input
                 className="email_input"
                 type="email"

@@ -305,15 +305,17 @@ nav a {
   background-image: linear-gradient(to bottom left, #18C8FF 0%, #933FFE 100%);
 }
 .navbar span {
-  display: flex;
+  display: none;
   gap: 1.5rem;
 }
 .navbar span i {
+  display: none;
+  gap: 1.5rem;
   cursor: pointer;
 }
 @media (max-width: 1000px) {
   .navbar span i {
-    display: none;
+    display: flex !important;
   }
 }
 .navbar span i:hover {
@@ -325,11 +327,12 @@ nav a {
 }
 
 .hamburger-menu {
+  display: none;
   font-size: 2rem;
 }
 @media (max-width: 1000px) {
   .hamburger-menu {
-    display: none;
+    display: flex !important;
   }
 }
 
@@ -391,14 +394,6 @@ nav a {
   -webkit-background-clip: text;
   color: transparent;
   background-image: linear-gradient(to bottom left, #18C8FF 0%, #933FFE 100%);
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
 }
 
 .hero-section {

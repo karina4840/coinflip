@@ -79,7 +79,7 @@ function CoinUpdate() {
                     </p>
                     <p>
                       Trade Now
-                      <i class="fa-solid fa-arrow-right"></i>
+                      <i className="fa-solid fa-arrow-right"></i>
                     </p>
                   </Link>
                 ))}
