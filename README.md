@@ -15,8 +15,12 @@ Integrated with the Coingecko API, a widely used cryptocurrency data source, the
 <br>
 
 <h2>Screenshots of the Project</h2>
-<br>
+
 <h3>Home</h3>
+
+<p>Auth:</p>
+<p><b>login:</b> admin@sample.com</p>
+<p><b>password:</b> Admin12345!</p>
 
 <div align='center'>
 <img src='https://github.com/karina4840/coinflip/blob/main/img1.png?raw=true'/>
