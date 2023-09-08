@@ -308,7 +308,6 @@ nav a {
   gap: 1.5rem;
 }
 .navbar span i {
-  gap: 1.5rem;
   cursor: pointer;
 }
 @media (max-width: 1000px) {
