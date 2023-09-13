@@ -84,6 +84,11 @@
     align-items: center;
     border-radius: 50%;
     border: 1px solid $grey-color;
+
+    svg{
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   a {

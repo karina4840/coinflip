@@ -4,7 +4,8 @@ import { Route, Routes } from "react-router-dom";
 import NavElem from "./NavElem";
 import history from "../utils/history";
 import LoginBtn from "./LoginBtn";
-
+import CloseIcon from "@mui/icons-material/Close";
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -41,20 +42,39 @@ function Navbar() {
 
           <Routes history={history}>
             <Route path="/" element={<NavElem />} />
-          </Routes> 
+          </Routes>
           <LoginBtn />
-          <span className="hamburger-menu"> 
-            <i
-              onClick={openMobile}
-              className={"fa-solid fa-bars-staggered hamburger-menu"}
-            ></i>
+          <span className="hamburger-menu">
+            <i onClick={openMobile}>
+              <MenuIcon 
+               sx={{
+                transition: "color 0.5s",
+                color: "#B982FF",
+                "&:hover": {
+                  color: "#18C8FF",
+                },
+              }}
+              />
+            </i>
           </span>
         </div>
       </nav>
 
       {/* mobile nav */}
       <div className={`mobile-nav ${mobile ? "mobile-up" : ""}`}>
-        <i onClick={openMobile} className="fa-solid fa-xmark close-mobile"></i>
+      <span className="close-mobile">
+            <i onClick={openMobile}  >
+            <CloseIcon 
+              sx={{
+                transition: "color 0.5s",
+                color: "#B982FF",
+                "&:hover": {
+                  color: "#18C8FF",
+                },
+              }}
+            />
+            </i>
+          </span>
         <ul>
           <li onClick={openMobile}>
             <a href="/#buysell">Buy / Sell</a>

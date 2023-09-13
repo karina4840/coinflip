@@ -114,33 +114,27 @@ nav {
     }
   }
 
-  span {
+  .hamburger-menu {
+    display: none;
     gap: 1.5rem;
 
     i {
       cursor: pointer;
 
-      @media (max-width: 1000px) {
-        display: flex !important;
-      }
-
       &:hover {
         transition: all 0.3s;
         background-clip: text;
         -webkit-background-clip: text;
-        color: transparent;
         background-image: $purple-blue-gradient;
       }
+      svg {
+        font-size: 2.5rem;
+      }
     }
-  }
-}
 
-.hamburger-menu {
-  display: none;
-  font-size: 2rem;
-
-  @media (max-width: 1000px) {
-    display: flex !important;
+    @media (max-width: 1000px) {
+      display: flex !important;
+    }
   }
 }
 
@@ -247,9 +241,13 @@ nav {
 .close-mobile {
   position: absolute;
   top: 3rem;
-  right: 3rem;
+  right: 6.5rem;
   cursor: pointer;
   color: $grey-color;
+
+  svg {
+    font-size: 2.5rem;
+  }
 
   &:hover {
     transition: all 0.3s;

@@ -1,3 +1,5 @@
+import NorthEastIcon from '@mui/icons-material/NorthEast';
+
 function GetStarted() {
   return (
     <>
@@ -22,7 +24,7 @@ function GetStarted() {
                 Unsubscribe at any time.
                 <span>
                    Privacy policy
-                  <i className="fa-solid fa-turn-up"></i>
+                   <NorthEastIcon />
                 </span>
               </p>
               <form autoComplete="off" method="post" action="" className="start__email-wrap">

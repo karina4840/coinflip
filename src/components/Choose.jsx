@@ -1,7 +1,8 @@
+
 function Choose({ img, title, text, link }) {
     return (
       <div className="choose-box">
-        <i className={img}></i>
+        <i>{img}</i>
         <div className="choose-box__text">
           <h4>{title}</h4>
           <p>{text}</p>

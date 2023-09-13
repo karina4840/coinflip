@@ -7,10 +7,12 @@
   height: fit-content;
 
   @media (max-width: 800px) {
-    margin-bottom: 300px;
+    padding-top: 460px;
+    margin-bottom: 400px;
   }
 
   @media (max-width: 550px) {
+    padding-top: 160px;
     margin-bottom: 400px;
   }
 }

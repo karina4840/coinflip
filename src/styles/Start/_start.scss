@@ -3,7 +3,7 @@
 .start-section {
   margin-top: -250px;
   padding-top: 250px;
-  margin-bottom: 25rem;
+  margin-bottom: 15rem;
   height: 100vh;
 
   @media (max-width: 800px) {
@@ -110,11 +110,21 @@
         color: $white-color;
         margin-left: 5px;
         cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+
       }
-      i {
+      svg {
         margin-left: 10px;
-        font-size: $text-small;
+        font-size: 0.5rem;
+
+        &:hover {
+          transition: all 0.3s;
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: $pink-color;
       }
+    }
     }
 
     .start__email-wrap {

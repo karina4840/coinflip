@@ -118,7 +118,7 @@
     height: auto;
     border-bottom: 1px solid $white-trp-color;
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     user-select: none;
     transition: all 0.3s;
 
@@ -201,6 +201,16 @@
 
     @media (max-width: 800px) {
       width: 2rem;
+    }
+  }
+
+  .coin-trade{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media (max-width: 800px) {
+      justify-content: flex-start;
     }
   }
 }

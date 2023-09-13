@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 function CoinUpdate() {
   const [data, setData] = useState([]);
@@ -44,11 +45,14 @@ function CoinUpdate() {
       <section id="buysell" className="market-section">
         <div className="container">
           <div className="market-content">
-          <div className="market-content__text">
-          <h2>Buy and sell with the lowest fees in the industry</h2>
-          <p>Buy and sell 150+ cryptocurrencies with 20+ fiat currencies using bank transfers or your credit/debit card.</p>
-          </div>
-            
+            <div className="market-content__text">
+              <h2>Buy and sell with the lowest fees in the industry</h2>
+              <p>
+                Buy and sell 150+ cryptocurrencies with 20+ fiat currencies
+                using bank transfers or your credit/debit card.
+              </p>
+            </div>
+
             <div className="market-content__coin-list">
               <div
                 onLoad={() => setApiLoad(false)}
@@ -77,9 +81,11 @@ function CoinUpdate() {
                     >
                       {item.price_change_percentage_24h?.toFixed(2) + " %"}
                     </p>
-                    <p>
+                    <p className="coin-trade">
                       Trade Now
-                      <i className="fa-solid fa-arrow-right"></i>
+                      <i>
+                        <KeyboardArrowRightIcon />
+                      </i>
                     </p>
                   </Link>
                 ))}
