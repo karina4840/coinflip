@@ -121,9 +121,9 @@
     gap: 1.5rem;
     user-select: none;
     transition: all 0.3s;
-
+ 
     @media (max-width: 800px) {
-      grid-template-columns: 2fr 2fr 6fr 2fr 7fr;
+      grid-template-columns: 2fr 2fr 4fr 4fr 4fr;
     }
 
     @media (max-width: 550px) {
