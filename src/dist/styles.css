@@ -11,6 +11,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 body {
   position: relative;
   font-family: "Inter", sans-serif;
@@ -20,6 +21,11 @@ body {
 @media (max-width: 700px) {
   body {
     width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    padding: 0 2rem;
   }
 }
 
@@ -110,6 +116,7 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 body {
   position: relative;
   font-family: "Inter", sans-serif;
@@ -119,6 +126,11 @@ body {
 @media (max-width: 700px) {
   body {
     width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  body {
+    padding: 0 2rem;
   }
 }
 
@@ -604,7 +616,7 @@ nav a {
 @media (max-width: 800px) {
   .market-section {
     padding-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 340px;
   }
 }
 @media (max-width: 550px) {
@@ -952,13 +964,8 @@ nav a {
 .start-section {
   margin-top: -250px;
   padding-top: 250px;
-  margin-bottom: 15rem;
   height: 100vh;
-}
-@media (max-width: 800px) {
-  .start-section {
-    margin-bottom: 0;
-  }
+  margin-bottom: 200px;
 }
 @media (max-width: 550px) {
   .start-section {
@@ -1131,7 +1138,7 @@ nav a {
 }
 @media (max-width: 800px) {
   .support-section {
-    padding-top: 260px;
+    padding-top: 400px;
     margin-bottom: 400px;
   }
 }

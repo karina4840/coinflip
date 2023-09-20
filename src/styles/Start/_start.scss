@@ -3,12 +3,8 @@
 .start-section {
   margin-top: -250px;
   padding-top: 250px;
-  margin-bottom: 15rem;
   height: 100vh;
-
-  @media (max-width: 800px) {
-    margin-bottom: 0;
-  }
+  margin-bottom: 200px;
 
   @media (max-width: 550px) {
     margin-bottom: 5rem;
