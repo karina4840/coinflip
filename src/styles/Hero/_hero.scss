@@ -39,6 +39,9 @@
     @media (max-width: 800px) {
       font-size: $h2-size;
     }
+    @media (max-width: 400px) {
+      font-size: $h3-size;
+    }
   }
 
   &__text_small h1 {
@@ -54,6 +57,9 @@
     @media (max-width: 800px) {
       font-size: $text-big;
       width: 60%;
+    }
+    @media (max-width: 400px) {
+      width: 85%;
     }
   }
 }
@@ -79,6 +85,10 @@
 
   &:active {
     box-shadow: -2px 2px 10px 0px $purple-color;
+  }
+  @media (max-width: 400px) {
+    width: 130px;
+  height: 46px;
   }
 }
 
@@ -106,6 +116,10 @@
 
   &:active {
     box-shadow: -2px 2px 10px 0px $purple-color;
+  }
+  @media (max-width: 400px) {
+    width: 130px;
+  height: 46px;
   }
 }
 
